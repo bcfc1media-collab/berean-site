@@ -46,10 +46,10 @@
   .brand img{height:42px;width:auto;border-radius:6px}
   .brand b{font-family:var(--serif);font-size:1.05rem;color:var(--fg);font-weight:600;line-height:1.1}
   .brand span{display:block;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-family:var(--sans);font-weight:600}
-  nav.links{display:flex;align-items:center;gap:1.6rem}
-  nav.links a{text-decoration:none;font-weight:500;font-size:.95rem;color:var(--fg);opacity:.85}
+  nav.links{display:flex;align-items:center;gap:1.4rem}
+  nav.links a{text-decoration:none;font-weight:500;font-size:.93rem;color:var(--fg);opacity:.85}
   nav.links a:hover{opacity:1;color:var(--brand)}
-  .nav-cta{margin-left:.4rem}
+  .nav-cta{margin-left:.3rem}
   .burger{display:none;background:none;border:0;cursor:pointer;padding:8px}
   .burger span{display:block;width:22px;height:2px;background:var(--fg);margin:4px 0;border-radius:2px}
 
@@ -87,6 +87,30 @@
   .brandbg .muted,.brandbg p{color:rgba(255,255,255,.85)}
 
   .believe{grid-template-columns:repeat(3,1fr)}
+  .autogrid{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+
+  /* Story */
+  .prose p{color:var(--muted);font-size:1.02rem;margin:0 0 1rem}
+  .prose p:last-child{margin-bottom:0}
+  .story-wrap{max-width:760px;margin:0 auto}
+
+  /* Leadership */
+  .leader b{display:block;font-family:var(--serif);font-size:1.15rem;color:var(--fg)}
+  .leader .role{color:var(--accent);font-weight:600;font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;margin-top:.15rem}
+  .lead-avatar{width:56px;height:56px;border-radius:50%;background:var(--brand-soft);color:var(--brand);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:700;font-size:1.3rem;margin-bottom:14px}
+
+  /* Ministries */
+  .min b{display:block;font-family:var(--serif);font-size:1.12rem;margin-bottom:.25rem}
+  .min .meta{color:var(--muted);font-size:.9rem;margin-top:.7rem;display:flex;flex-direction:column;gap:.25rem}
+  .min .meta span{display:flex;gap:.45rem;align-items:flex-start}
+  .min .lead{font-weight:600;color:var(--brand-strong)}
+
+  /* Schedule */
+  .sched{display:flex;flex-direction:column;gap:.1rem;margin-top:.4rem}
+  .sched .row{display:flex;justify-content:space-between;gap:1rem;padding:.7rem 0;border-bottom:1px solid rgba(255,255,255,.18)}
+  .sched .row:last-child{border-bottom:0}
+  .sched .d{font-weight:600}
+  .sched .t{color:rgba(255,255,255,.85)}
 
   .visit-grid{grid-template-columns:1fr 1fr;gap:28px}
   .infoline{display:flex;gap:.7rem;align-items:flex-start;margin-top:.9rem}
@@ -128,11 +152,12 @@
       <b>Berean<span>Community Fellowship</span></b>
     </a>
     <nav class="links" id="menu">
-      <a href="#about">About</a>
-      <a href="#believe">What We Believe</a>
-      <a href="#visit">Plan a Visit</a>
+      <a href="#story">Our Story</a>
+      <a href="#leadership">Leadership</a>
+      <a href="#believe">Beliefs</a>
+      <a href="#ministries">Ministries</a>
+      <a href="#visit">Visit</a>
       <a href="#give">Give</a>
-      <a href="#contact">Contact</a>
       <a class="btn btn-primary nav-cta" href="#visit">Plan a Visit</a>
     </nav>
     <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -174,24 +199,52 @@
   </div>
 </section>
 
-<!-- Mission / Pastor band -->
-<section class="section soft" style="padding:56px 0">
-  <div class="wrap grid two">
-    <div>
-      <p class="eyebrow">Our Mission</p>
-      <h2 style="font-size:clamp(1.6rem,3vw,2.1rem);margin-top:.5rem">Impart the Word in a way that impacts the world.</h2>
-      <p style="color:var(--muted);margin-top:1rem">Through weekly worship, the faithful teaching of God&rsquo;s Word, prayer, discipleship, and outreach in our community, we exist to build believers who learn, love, lift, link, and lead — from our neighborhood to the greater Phoenix area and beyond.</p>
+<!-- Our Story -->
+<section class="section soft" id="story">
+  <div class="wrap story-wrap">
+    <div class="center-head" style="margin-bottom:28px">
+      <p class="eyebrow">Our Story</p>
+      <h2>How Berean came to be</h2>
     </div>
-    <div class="card">
-      <p class="eyebrow">Our Pastor</p>
-      <h3 style="margin:.3rem 0 .6rem">Pastor W. R. Thomas</h3>
-      <p>Pastor Thomas leads Berean Community Fellowship with a heart for the faithful teaching of God&rsquo;s Word and a deep love for the people of Phoenix.</p>
+    <div class="prose">
+      <p>Berean Community Fellowship began in 2001, when Pastor Fredrick L. Fairley became burdened for reaching a new generation with the unchanging message of Jesus Christ. He became convicted of a simple truth: the <em>message</em> must never change, but the <em>methods</em> must, in order to reach people for Christ.</p>
+      <p>On Saturday, October 27, 2001, Pastor Fairley gathered a group of believers at a Denny&rsquo;s restaurant at the corner of 51st Avenue and Indian School Road and shared a vision for a new church that would meet the challenges of a new century. God&rsquo;s peace was present and His purpose for His people was revealed — and, as on the day of Pentecost, the people were all in one place and of one accord. The church&rsquo;s Organizational Service was held on December 2, 2001, with messages brought by Bishop Alexis A. Thomas of Pilgrim Rest Baptist Church and Pastor Thomas E. Fisher.</p>
+      <p>In 2023, Berean Community Fellowship was established through the shared vision, faith, and commitment of a dedicated group of believers who, recognizing the need for a new organizational structure, sought to preserve their identity as Bereans. United by their devotion to God, their commitment to biblical principles, and their desire to continue the work of ministry, these founding members came together to build a fellowship rooted in faith, unity, spiritual growth, and service to the community.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Leadership -->
+<section class="section" id="leadership">
+  <div class="wrap">
+    <div class="center-head">
+      <p class="eyebrow">Our Leadership</p>
+      <h2>Shepherding the Berean family</h2>
+    </div>
+
+    <!-- Pastor -->
+    <div class="grid two" style="margin-bottom:28px">
+      <div>
+        <p class="eyebrow">Our Pastor</p>
+        <h3 style="font-size:1.7rem;margin:.4rem 0 .8rem">Pastor William R. Thomas</h3>
+        <p style="color:var(--muted)">As a true servant of God and His people, Pastor Thomas has a humble heart to do the will of God at any cost. Through his faith in God, he encourages and speaks life to others — a workman in the vineyard who has set his hand to the plow and will not look back. As a steward of this ministry, he loves traveling across the country preaching and teaching the gospel, leading lost souls to Jesus Christ. Pastor Thomas has been married to Dr. L. Regina Johnson Thomas for over 20 years; together they have two daughters and three grandchildren.</p>
+      </div>
+      <div class="card brandbg">
+        <p style="font-family:var(--serif);font-size:1.3rem;line-height:1.4;margin:0">&ldquo;The message must never change — but the methods must, to reach people for Christ.&rdquo;</p>
+      </div>
+    </div>
+
+    <!-- Leadership team -->
+    <div class="grid autogrid">
+      <div class="card leader"><div class="lead-avatar">WT</div><b>Pastor W. R. Thomas</b><div class="role">Senior Pastor</div></div>
+      <div class="card leader"><div class="lead-avatar">DW</div><b>Debora Williams</b><div class="role">Executive Pastor</div></div>
+      <div class="card leader"><div class="lead-avatar">RT</div><b>Dr. L. Regina Thomas</b><div class="role">Associate Pastor</div></div>
     </div>
   </div>
 </section>
 
 <!-- Believe -->
-<section class="section" id="believe">
+<section class="section soft" id="believe">
   <div class="wrap">
     <div class="center-head">
       <p class="eyebrow">What We Believe</p>
@@ -206,19 +259,92 @@
   </div>
 </section>
 
+<!-- Ministries -->
+<section class="section" id="ministries">
+  <div class="wrap">
+    <div class="center-head">
+      <p class="eyebrow">Ministries</p>
+      <h2>Serve, grow, and belong</h2>
+      <p>There&rsquo;s a place for everyone at Berean. Our ministries help you grow in faith, build community, and use your gifts to serve.</p>
+    </div>
+    <div class="grid autogrid">
+      <div class="card min">
+        <b>Youth Ministry</b>
+        <p>For our youth, ages 3–24.</p>
+        <div class="meta">
+          <span>🗓️ Every other Saturday, 10 AM–1 PM</span>
+          <span class="lead">Led by Minister Burks</span>
+        </div>
+      </div>
+      <div class="card min">
+        <b>Men&rsquo;s Ministry</b>
+        <p>Fellowship and growth for the men of the church.</p>
+        <div class="meta">
+          <span>🗓️ 1st Saturday monthly, 10 AM</span>
+          <span class="lead">Led by Deacon Darrel Williams</span>
+        </div>
+      </div>
+      <div class="card min">
+        <b>Women&rsquo;s Ministry</b>
+        <p>Fellowship and growth for the women of the church.</p>
+        <div class="meta">
+          <span>🗓️ 1st Saturday monthly, 10 AM</span>
+          <span class="lead">Led by Sister Angela Hubbard</span>
+        </div>
+      </div>
+      <div class="card min">
+        <b>Prayer Ministry</b>
+        <p>Standing in the gap for our church, families, and community.</p>
+        <div class="meta">
+          <span class="lead">Led by Deaconess Yvonne Fairley</span>
+          <span>Assisted by Minister Shelly Byers</span>
+        </div>
+      </div>
+      <div class="card min">
+        <b>Christian Education</b>
+        <p>Grounding believers in the Word through teaching and study.</p>
+        <div class="meta">
+          <span class="lead">Led by Minister Shelly Byers</span>
+          <span>Assisted by Minister Burks</span>
+        </div>
+      </div>
+      <div class="card min">
+        <b>Music Ministry</b>
+        <p>Leading the congregation in worship through song.</p>
+        <div class="meta">
+          <span class="lead">Led by Minister Paul Clark</span>
+          <span>Assisted by Shellente Byers</span>
+        </div>
+      </div>
+      <div class="card min">
+        <b>Outreach</b>
+        <p>Sharing the love of Christ beyond our walls and into the community.</p>
+        <div class="meta">
+          <span class="lead">An extension of the Berean family</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Visit -->
 <section class="section soft" id="visit">
   <div class="wrap">
     <div class="center-head">
       <p class="eyebrow">Plan a Visit</p>
-      <h2>We&rsquo;d love to see you Sunday</h2>
+      <h2>We&rsquo;d love to see you</h2>
       <p>Come as you are. Whether you&rsquo;ve been in church your whole life or you&rsquo;re walking in for the first time, there&rsquo;s a place for you at Berean.</p>
     </div>
     <div class="grid visit-grid">
       <div class="card brandbg">
-        <p class="eyebrow" style="color:rgba(255,255,255,.75)">Sunday Worship</p>
-        <h3 style="color:#fff;font-size:1.7rem;margin:.3rem 0 .2rem">9:00 AM</h3>
-        <div class="infoline">
+        <p class="eyebrow" style="color:rgba(255,255,255,.75)">Gather With Us</p>
+        <div class="sched">
+          <div class="row"><span class="d">Sunday — Morning Prayer</span><span class="t">7:00 AM</span></div>
+          <div class="row"><span class="d">Sunday — Worship Service</span><span class="t">9:00 AM</span></div>
+          <div class="row"><span class="d">Wednesday — Bible Study</span><span class="t">7:00 AM</span></div>
+          <div class="row"><span class="d">Thursday — Prayer</span><span class="t">6:30 PM</span></div>
+        </div>
+        <div class="infoline" style="margin-top:1.1rem">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
           <div>3330 N. 35th Ave<br/>Phoenix, AZ 85017<br/>
             <a href="https://maps.google.com/?q=3330+N+35th+Ave+Phoenix+AZ+85017" target="_blank" rel="noopener" style="color:#fff;font-weight:600;text-decoration:underline">Get directions →</a>
