@@ -537,8 +537,9 @@
         headers: { 'Accept': 'application/json' },
         body: fd
       })
-      .then(function(r){ if(!r.ok) throw new Error('bad status'); return r.json(); })
-      .then(function(){
+      .then(function(r){ return r.json(); })
+      .then(function(j){
+        if (!j || String(j.success) !== 'true') throw new Error('not delivered');
         pform.hidden = true;
         document.getElementById('prayerThanks').hidden = false;
       })
