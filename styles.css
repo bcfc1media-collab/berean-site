@@ -137,6 +137,7 @@ header.scrolled .burger span{background:var(--fg)}
 
 /* Leadership */
 .leader{text-align:center}
+.leader .pfp{width:100%;max-width:240px;aspect-ratio:1/1;object-fit:cover;object-position:center top;border-radius:14px;margin:0 auto 18px;display:block;box-shadow:0 10px 28px rgba(10,91,99,.12)}
 .leader .ava{width:92px;height:92px;border-radius:50%;margin:0 auto 16px;background:linear-gradient(135deg,var(--brand-soft),#fff);color:var(--brand-strong);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:700;font-size:1.9rem;border:1px solid var(--border)}
 .leader b{display:block;font-family:var(--serif);font-size:1.2rem;font-weight:600}
 .leader .role{color:var(--accent);font-weight:700;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;margin-top:.3rem}
