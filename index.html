@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Berean Community Fellowship | Phoenix, AZ</title>
-<meta name="description" content="Berean Community Fellowship is a Bible-based, Christ-centered, Spirit-filled church in Phoenix, Arizona. Join us Sunday mornings at 9:00 AM — a place where the Savior is exalted and the Scripture is explained." />
+<meta name="description" content="A Bible-based, Christ-centered, Spirit-filled church in Phoenix, Arizona. Join us Sunday mornings at 9:00 AM — a place where the Savior is exalted and the Scripture is explained." />
 <meta property="og:title" content="Berean Community Fellowship" />
 <meta property="og:description" content="A Bible-based, Christ-centered, Spirit-filled church in Phoenix, Arizona. Sundays at 9:00 AM." />
 <meta property="og:type" content="website" />
@@ -14,245 +14,29 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<style>
-  :root{
-    --bg:#f4f6f6; --surface:#ffffff; --fg:#1b2127; --muted:#5f727f; --border:#e6eaea; --border-soft:#eef1f1;
-    --brand:#0e7a84; --brand-strong:#0a5b63; --brand-deep:#073a40; --brand-bright:#1eb2bb; --brand-soft:#e2f2f3;
-    --accent:#b76438; --accent-soft:#f7ece4; --gold:#c6974f;
-    --serif:'Fraunces',Georgia,'Times New Roman',serif;
-    --sans:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-    --maxw:1140px;
-  }
-  *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{margin:0;font-family:var(--sans);color:var(--fg);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased}
-  img{max-width:100%;display:block}
-  a{color:inherit}
-  h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.1;margin:0;letter-spacing:-.01em}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
-  .section{padding:92px 0}
-  .eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--accent)}
-  .display{font-family:var(--serif);font-weight:900;letter-spacing:-.02em;line-height:1.02}
-
-  .btn{display:inline-flex;align-items:center;gap:.55rem;border-radius:3px;padding:.95rem 1.7rem;font-weight:600;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border:1px solid transparent;transition:.18s;cursor:pointer}
-  .btn-primary{background:var(--brand);color:#fff}
-  .btn-primary:hover{background:var(--brand-strong)}
-  .btn-gold{background:var(--gold);color:#241a08}
-  .btn-gold:hover{filter:brightness(1.07)}
-  .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}
-  .btn-ghost:hover{background:rgba(255,255,255,.14)}
-  .btn-dark{background:var(--fg);color:#fff}
-  .btn-dark:hover{background:#000}
-
-  /* Header */
-  header.nav{position:fixed;top:0;left:0;right:0;z-index:60;transition:.25s}
-  header.nav.top{background:transparent}
-  header.nav.scrolled{background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
-  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:78px}
-  .brand{display:flex;align-items:center;gap:.7rem;text-decoration:none}
-  .brand img{height:46px;width:auto;border-radius:6px;background:#fff;padding:3px}
-  .brand b{font-family:var(--serif);font-size:1.1rem;font-weight:600;line-height:1.05;transition:.25s}
-  .brand span{display:block;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;font-family:var(--sans);font-weight:600;opacity:.75}
-  nav.links{display:flex;align-items:center;gap:1.7rem}
-  nav.links a{text-decoration:none;font-weight:600;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;transition:.15s}
-  nav.links a.navlink:hover{color:var(--brand)}
-  /* color states over hero vs scrolled */
-  header.top .brand b, header.top nav.links a.navlink{color:#fff}
-  header.top .brand span{color:rgba(255,255,255,.8)}
-  header.scrolled .brand b{color:var(--fg)}
-  header.scrolled nav.links a.navlink{color:var(--fg)}
-  header.scrolled .brand span{color:var(--muted)}
-  .burger{display:none;background:none;border:0;cursor:pointer;padding:9px;z-index:70}
-  .burger span{display:block;width:24px;height:2px;margin:5px 0;border-radius:2px;background:#fff;transition:.25s}
-  header.scrolled .burger span{background:var(--fg)}
-
-  /* Hero */
-  .hero{position:relative;min-height:100svh;display:flex;align-items:center;color:#fff;overflow:hidden}
-  .hero-bg{position:absolute;inset:0;z-index:0;
-    background:
-      radial-gradient(90% 70% at 78% 12%, rgba(30,178,187,.55) 0%, rgba(30,178,187,0) 55%),
-      radial-gradient(80% 80% at 10% 90%, rgba(10,91,99,.9) 0%, rgba(10,91,99,0) 60%),
-      linear-gradient(150deg, #0e7a84 0%, #0a5b63 48%, #073a40 100%);
-  }
-  /* To use a photo later: add  background-image:url('assets/hero.jpg'); background-size:cover; background-position:center; to .hero-photo and un-hide it */
-  .hero-photo{position:absolute;inset:0;z-index:0;background-size:cover;background-position:center}
-  .hero-scrim{position:absolute;inset:0;z-index:1;background:
-    linear-gradient(180deg, rgba(5,30,33,.6) 0%, rgba(5,30,33,0) 20%, rgba(5,30,33,0) 70%, rgba(5,30,33,.35) 100%),
-    linear-gradient(90deg, rgba(5,30,33,.82) 0%, rgba(5,30,33,.5) 50%, rgba(5,30,33,.28) 100%)}
-  .hero .wrap{position:relative;z-index:2;padding-top:120px;padding-bottom:70px;width:100%}
-  .hero h1{font-size:clamp(2.9rem,7.5vw,6rem);font-weight:900;letter-spacing:-.025em;max-width:16ch}
-  .hero .lede{max-width:46ch;margin:1.6rem 0 0;font-size:clamp(1rem,1.4vw,1.18rem);color:rgba(255,255,255,.9)}
-  .hero .svc{margin-top:1.7rem;font-size:1rem;color:rgba(255,255,255,.92)}
-  .hero .svc b{font-weight:700;color:#fff}
-  .hero-actions{margin-top:2.3rem;display:flex;gap:.9rem;flex-wrap:wrap}
-  .scrolldown{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);z-index:2;color:rgba(255,255,255,.7);font-size:.65rem;letter-spacing:.3em;text-transform:uppercase;text-align:center}
-  .scrolldown .bar{width:1px;height:46px;margin:10px auto 0;background:linear-gradient(rgba(255,255,255,.7),rgba(255,255,255,0))}
-
-  /* Section heads */
-  .center-head{text-align:center;max-width:720px;margin:0 auto 56px}
-  .center-head h2{font-size:clamp(2rem,4vw,3rem);margin-top:.7rem;font-weight:700}
-  .center-head p{color:var(--muted);margin-top:1rem;font-size:1.08rem}
-  .lead-in{color:var(--muted);font-size:1.08rem}
-
-  /* Values */
-  .grid{display:grid;gap:22px}
-  .values{grid-template-columns:repeat(5,1fr);gap:14px}
-  .value{text-align:center;padding:10px 6px}
-  .value .vnum{font-family:var(--serif);font-size:2.4rem;font-weight:900;color:var(--brand);line-height:1;opacity:.9}
-  .value b{display:block;font-family:var(--serif);font-size:1.15rem;margin-top:.5rem;font-weight:600}
-  .value small{color:var(--muted);font-size:.86rem;display:block;margin-top:.2rem}
-
-  /* Immersive bands */
-  .band{position:relative;color:#fff;text-align:center;overflow:hidden;
-    background:radial-gradient(100% 120% at 50% 0%, #0e7a84 0%, #0a5b63 55%, #073a40 100%)}
-  .band .wrap{position:relative;z-index:2;padding:96px 24px}
-  .band.alt{background:radial-gradient(100% 120% at 50% 0%, #1a2228 0%, #10171c 60%, #0b1114 100%)}
-  .band .eyebrow{color:var(--gold)}
-  .band h2{font-size:clamp(1.8rem,3.6vw,2.9rem);font-weight:700;max-width:18ch;margin:.7rem auto 0}
-  .band .quote{font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(1.5rem,3.4vw,2.6rem);line-height:1.3;max-width:20ch;margin:.5rem auto 0}
-  .band p{color:rgba(255,255,255,.82);max-width:48ch;margin:1.1rem auto 0;font-size:1.05rem}
-  .band .band-actions{margin-top:2rem;display:flex;gap:.9rem;justify-content:center;flex-wrap:wrap}
-
-  /* Cards */
-  .card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:30px;box-shadow:0 1px 2px rgba(0,0,0,.03)}
-  .card h3{font-size:1.2rem;margin-bottom:.4rem;font-weight:600}
-  .card p{color:var(--muted);margin:0;font-size:.98rem}
-  .ico{width:48px;height:48px;border-radius:11px;display:flex;align-items:center;justify-content:center;background:var(--brand-soft);color:var(--brand);font-size:1.3rem;margin-bottom:16px}
-  .autogrid{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-  .soft{background:#eef2f2}
-
-  /* Story */
-  .story-intro{max-width:760px;margin:0 auto 10px}
-  .story-intro p{color:var(--muted);font-size:1.1rem;margin:0 0 1.15rem}
-  .story-intro .first::first-letter{initial-letter:2;font-family:var(--serif);font-weight:900;color:var(--brand);margin-right:.6rem;float:left;font-size:3.1rem;line-height:.8;padding-top:.1rem}
-  .pullquote{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(1.3rem,2.6vw,1.9rem);line-height:1.35;color:var(--brand-strong);text-align:center;max-width:22ch;margin:18px auto}
-  .pullquote cite{display:block;font-style:normal;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-top:.9rem;font-weight:700}
-
-  /* Timeline */
-  .timeline{max-width:780px;margin:56px auto 0;position:relative;padding-left:34px}
-  .timeline::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--brand),var(--brand-soft))}
-  .tl{position:relative;padding:0 0 30px 30px}
-  .tl::before{content:"";position:absolute;left:-0.5px;top:5px;width:16px;height:16px;border-radius:50%;background:var(--surface);border:3px solid var(--brand)}
-  .tl:last-child{padding-bottom:0}
-  .tl .yr{font-family:var(--serif);font-weight:900;color:var(--accent);font-size:1.05rem;letter-spacing:.02em}
-  .tl h4{font-size:1.2rem;font-weight:600;margin:.1rem 0 .35rem}
-  .tl p{color:var(--muted);margin:0;font-size:.98rem}
-
-  /* Leadership */
-  .leader{text-align:center}
-  .leader .ava{width:92px;height:92px;border-radius:50%;margin:0 auto 16px;background:linear-gradient(135deg,var(--brand-soft),#fff);color:var(--brand-strong);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:700;font-size:1.9rem;border:1px solid var(--border)}
-  .leader b{display:block;font-family:var(--serif);font-size:1.2rem;font-weight:600}
-  .leader .role{color:var(--accent);font-weight:700;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;margin-top:.3rem}
-  .leader p{color:var(--muted);font-size:.93rem;margin:.7rem 0 0}
-
-  /* Beliefs accordion */
-  .acc{max-width:820px;margin:0 auto;border-top:1px solid var(--border)}
-  .acc details{border-bottom:1px solid var(--border)}
-  .acc summary{list-style:none;cursor:pointer;padding:22px 4px;display:flex;align-items:center;justify-content:space-between;gap:1rem;font-family:var(--serif);font-size:1.2rem;font-weight:600}
-  .acc summary::-webkit-details-marker{display:none}
-  .acc summary .plus{flex:0 0 auto;width:26px;height:26px;position:relative;transition:.2s}
-  .acc summary .plus::before,.acc summary .plus::after{content:"";position:absolute;background:var(--brand);border-radius:2px;transition:.2s}
-  .acc summary .plus::before{left:3px;right:3px;top:12px;height:2px}
-  .acc summary .plus::after{top:3px;bottom:3px;left:12px;width:2px}
-  .acc details[open] summary .plus::after{transform:rotate(90deg);opacity:0}
-  .acc .body{padding:0 4px 24px;color:var(--muted);font-size:1rem;max-width:66ch}
-  .acc .body .ref{display:block;margin-top:.6rem;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:700}
-
-  /* Ministries */
-  .min b{display:block;font-family:var(--serif);font-size:1.2rem;margin-bottom:.3rem;font-weight:600}
-  .min .mmeta{color:var(--muted);font-size:.9rem;margin-top:.8rem;display:flex;flex-direction:column;gap:.3rem}
-  .min .lead{font-weight:700;color:var(--brand-strong)}
-
-  /* Visit schedule */
-  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
-  .brandcard{background:radial-gradient(120% 140% at 0% 0%, #0e7a84 0%, #0a5b63 60%, #073a40 100%);color:#fff;border:0}
-  .brandcard h3,.brandcard .eyebrow{color:#fff}
-  .brandcard .eyebrow{color:var(--gold)}
-  .sched{margin-top:.5rem}
-  .sched .row{display:flex;justify-content:space-between;gap:1rem;padding:.85rem 0;border-bottom:1px solid rgba(255,255,255,.16)}
-  .sched .row:last-child{border-bottom:0}
-  .sched .d{font-weight:600}
-  .sched .t{color:rgba(255,255,255,.82)}
-  .infoline{display:flex;gap:.7rem;align-items:flex-start;margin-top:1.1rem;font-size:.97rem}
-
-  /* Give */
-  .give-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:760px;margin:0 auto}
-  .give{display:flex;align-items:center;gap:18px;text-decoration:none;background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:26px;transition:.18s}
-  .give:hover{border-color:var(--brand);transform:translateY(-2px);box-shadow:0 10px 30px rgba(10,91,99,.08)}
-  .give .badge{width:58px;height:58px;border-radius:14px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:1.6rem;flex:0 0 auto;font-family:var(--serif)}
-  .give b{display:block;font-size:1.15rem}
-  .give small{color:var(--muted)}
-
-  /* Prayer */
-  .pform{display:grid;gap:15px}
-  .pf-row{display:grid;grid-template-columns:1fr 1fr;gap:15px}
-  .field{display:flex;flex-direction:column;gap:.4rem;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--fg)}
-  .field input,.field textarea{font-family:inherit;font-size:.98rem;font-weight:400;letter-spacing:0;text-transform:none;color:var(--fg);background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:.8rem .95rem;width:100%;resize:vertical}
-  .field input:focus,.field textarea:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 3px var(--brand-soft)}
-  .pform button{justify-content:center;width:100%;border:0}
-  .pnote{text-align:center;font-size:.82rem;color:var(--muted);margin:.9rem 0 0}
-  .pthanks{text-align:center;padding:36px 20px}
-  .pthanks .ico{margin:0 auto 16px;width:58px;height:58px;font-size:1.7rem}
-
-  /* Contact */
-  .contact-grid{display:grid;grid-template-columns:repeat(3,1fr);max-width:900px;margin:0 auto;gap:22px}
-  .contact-grid .card{text-align:center}
-
-  /* Footer */
-  footer{background:#0c1317;color:#b7c4cc;padding:72px 0 34px;font-size:.93rem}
-  footer .ftop{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:36px}
-  footer h4{font-family:var(--sans);text-transform:uppercase;letter-spacing:.14em;font-size:.72rem;color:#7f9099;margin:0 0 1rem;font-weight:700}
-  footer a{color:#b7c4cc;text-decoration:none;transition:.15s}
-  footer a:hover{color:#fff}
-  footer .fcol a{display:block;padding:.28rem 0}
-  .fbrand b{font-family:var(--serif);color:#fff;font-size:1.2rem;font-weight:600;display:block}
-  .fbrand p{color:#8699a2;margin:.6rem 0 0;max-width:34ch}
-  .socials{display:flex;gap:.6rem;margin-top:16px}
-  .socials a{width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.16);display:flex;align-items:center;justify-content:center;font-size:.9rem}
-  .socials a:hover{background:rgba(255,255,255,.1)}
-  .legal{margin-top:46px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);color:#6f818b;font-size:.8rem;line-height:1.8}
-  .legal b{color:#9fb0b8}
-
-  @media(max-width:900px){
-    footer .ftop{grid-template-columns:1fr 1fr}
-  }
-  @media(max-width:860px){
-    .section{padding:68px 0}
-    .values{grid-template-columns:repeat(2,1fr)}
-    .visit-grid,.give-grid,.contact-grid{grid-template-columns:1fr}
-    nav.links{position:fixed;inset:0 0 0 auto;width:min(80vw,320px);background:var(--surface);flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:0;padding:96px 28px 28px;transform:translateX(100%);transition:.28s;box-shadow:-20px 0 60px rgba(0,0,0,.18)}
-    nav.links.open{transform:translateX(0)}
-    nav.links a.navlink{color:var(--fg)!important;width:100%;padding:15px 0;border-bottom:1px solid var(--border-soft);font-size:.8rem}
-    .nav-cta{margin-top:14px}
-    .burger{display:block}
-    .pf-row{grid-template-columns:1fr}
-    .timeline{padding-left:6px}
-  }
-  @media(max-width:560px){.contact-grid{grid-template-columns:1fr}.values{grid-template-columns:1fr 1fr}}
-</style>
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
 <header class="nav top" id="hdr">
   <div class="wrap nav-inner">
-    <a class="brand" href="#top">
+    <a class="brand" href="index.html">
       <img src="assets/berean-logo.jpg" alt="Berean Community Fellowship logo" />
       <b>Berean<span>Community Fellowship</span></b>
     </a>
     <nav class="links" id="menu">
-      <a class="navlink" href="#story">Our Story</a>
-      <a class="navlink" href="#beliefs">Beliefs</a>
-      <a class="navlink" href="#ministries">Ministries</a>
-      <a class="navlink" href="#leadership">Leadership</a>
-      <a class="navlink" href="#give">Give</a>
-      <a class="navlink" href="#prayer">Prayer</a>
-      <a class="btn btn-gold nav-cta" href="#visit">Plan a Visit</a>
+      <a class="navlink" href="about.html">About</a>
+      <a class="navlink" href="story.html">Our Story</a>
+      <a class="navlink" href="ministries.html">Ministries</a>
+      <a class="navlink" href="events.html">Events</a>
+      <a class="navlink" href="give.html">Give</a>
+      <a class="navlink" href="connect.html">Connect</a>
+      <a class="btn btn-gold nav-cta" href="visit.html">Plan a Visit</a>
     </nav>
     <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </header>
 
-<a id="top"></a>
 <!-- HERO -->
 <section class="hero">
   <div class="hero-bg"></div>
@@ -264,254 +48,56 @@
     <p class="lede">Berean Community Fellowship is a Bible-based, Christ-centered, Spirit-filled church — imparting the Word to impact the world.</p>
     <p class="svc"><b>Sundays at 9:00 AM</b> &nbsp;·&nbsp; 3330 N. 35th Ave, Phoenix, AZ 85017</p>
     <div class="hero-actions">
-      <a class="btn btn-gold" href="#visit">Plan a Visit</a>
-      <a class="btn btn-ghost" href="#story">Our Story</a>
+      <a class="btn btn-gold" href="visit.html">Plan a Visit</a>
+      <a class="btn btn-ghost" href="story.html">Our Story</a>
     </div>
   </div>
   <div class="scrolldown">Scroll<div class="bar"></div></div>
 </section>
 
-<!-- WHO WE ARE -->
-<section class="section" id="about">
+<!-- WELCOME + FEATURE CARDS -->
+<section class="section">
   <div class="wrap">
     <div class="center-head">
-      <p class="eyebrow">Who We Are</p>
-      <h2>Rooted in the Word,<br/>reaching the world</h2>
-      <p>Our name comes from the believers in Berea, who &ldquo;received the word with all readiness of mind, and searched the scriptures daily&rdquo; (Acts 17:11). That is who we strive to be — a people who love Scripture, examine everything by it, and let it shape how we live and love.</p>
+      <p class="eyebrow">Welcome Home</p>
+      <h2>However you come, there&rsquo;s a place for you</h2>
+      <p>We&rsquo;re a family of believers in Phoenix who love God&rsquo;s Word and one another. Here&rsquo;s where to begin.</p>
     </div>
-    <div class="grid values">
-      <div class="value"><div class="vnum">1</div><b>Learn</b><small>Grow in the Word</small></div>
-      <div class="value"><div class="vnum">2</div><b>Love</b><small>Love God &amp; people</small></div>
-      <div class="value"><div class="vnum">3</div><b>Lift</b><small>Worship &amp; prayer</small></div>
-      <div class="value"><div class="vnum">4</div><b>Link</b><small>Community &amp; belonging</small></div>
-      <div class="value"><div class="vnum">5</div><b>Lead</b><small>Serve &amp; reach others</small></div>
-    </div>
-  </div>
-</section>
-
-<!-- BAND: Acts 17:11 -->
-<section class="band" style="background-image:linear-gradient(rgba(6,34,38,.76),rgba(6,34,38,.82)),url('assets/band-worship.jpg');background-size:cover;background-position:center">
-  <div class="wrap">
-    <p class="eyebrow">Our Namesake</p>
-    <p class="quote">&ldquo;They received the word with all readiness of mind, and searched the scriptures daily.&rdquo;</p>
-    <p style="color:var(--gold);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.8rem;margin-top:1rem">Acts 17:10–11</p>
-  </div>
-</section>
-
-<!-- OUR STORY -->
-<section class="section" id="story">
-  <div class="wrap">
-    <div class="center-head">
-      <p class="eyebrow">Our Story</p>
-      <h2>Imparting the Word to impact the world</h2>
-      <p>From a vision shared around a restaurant table to a thriving fellowship in Phoenix — the story of Berean is a testimony of God&rsquo;s sustaining grace.</p>
-    </div>
-
-    <div class="story-intro">
-      <p class="first">Berean began in 2001 with a burden and a vision. God laid on the heart of Dr. Fredrick L. Fairley Sr. a desire to reach a new generation with the unchanging message of Jesus Christ. Having served in ministry in Phoenix, he recognized the challenge of reaching succeeding generations — and became convinced of a simple truth: the <em>message</em> of the gospel must never change, but the <em>methods</em> we use to carry it must be willing to meet a changing world.</p>
-      <p>On October 27, 2001, Pastor Fairley gathered a group of believers around a table at a Denny&rsquo;s near 51st Avenue and Indian School Road and shared the vision for a new church — committed to biblical teaching, evangelism, spiritual growth, and effective ministry. Inspired by Acts 17:10–11, they took the name Berean, after the believers who eagerly received God&rsquo;s Word and searched the Scriptures daily to see whether what they were taught was true.</p>
-    </div>
-
-    <p class="pullquote">&ldquo;The Bible is our middle name.&rdquo;<cite>Berean&rsquo;s 10th-anniversary theme</cite></p>
-
-    <div class="story-intro">
-      <p>The vision caught fire. Berean held its first worship service on November 4, 2001, with more than 150 people present — and within that first month, over 140 people united with the new congregation. On December 2, 2001, the church held its formal organizational service, with messages brought by Bishop Alexis A. Thomas of Pilgrim Rest Baptist Church and Pastor Thomas E. Fisher, joined by pastors and supporters from across the Valley.</p>
-      <p>What began around a table grew into a flourishing ministry. Over the following years, Berean developed ministries for youth, music, Christian education, mentoring, and more, and hosted Bible conferences devoted to the faithful exposition of God&rsquo;s Word. By its tenth anniversary, the congregation had grown to more than 500 — and in 2011 embraced the name Berean Bible Church, reinforcing a lifelong commitment to the authority, study, and proclamation of Scripture under the theme that still drives us: <em>imparting the Word to impact the world</em>.</p>
-      <p>Like every family, Berean has known seasons of triumph and seasons of testing. Through financial trials, changes of location, and a transition in leadership, one truth held firm: a church is not its walls. Through every season, the people of Berean kept gathering for worship, kept serving one another, and kept carrying the Word forward — a reminder that the identity of a church is never confined to any one building.</p>
-      <p>Today, Berean is led by Senior Pastor W. R. Thomas — a minister raised up and ordained under Berean&rsquo;s founding pastor, who returned to shepherd the congregation through a season of transition and was called to lead it forward. In 2023, following that transition, the congregation was established as a new nonprofit, <strong>Berean Community Fellowship</strong> — a new organizational chapter in a story that reaches back to 2001. The name has grown, but the mission remains the same.</p>
-      <p>We remember with gratitude the founding pastor, the deacons and ministry leaders, the teachers, musicians, and families whose faithful service built and sustained this church. As the Apostle Paul wrote, one plants, another waters, but God gives the increase (1 Corinthians 3:6). To God be the glory for all He has done.</p>
-    </div>
-
-    <!-- Timeline -->
-    <div class="timeline">
-      <div class="tl"><div class="yr">2001</div><h4>A vision is born</h4><p>Dr. Fredrick L. Fairley Sr. shares the vision for a new, Word-centered church. Berean holds its first worship service on November 4 with 150+ in attendance, and is formally organized on December 2.</p></div>
-      <div class="tl"><div class="yr">2001–2010</div><h4>A growing ministry</h4><p>Berean&rsquo;s ministries flourish — youth, music, Christian education, mentoring, and Bible conferences devoted to faithful teaching.</p></div>
-      <div class="tl"><div class="yr">2011</div><h4>Berean Bible Church</h4><p>At its tenth anniversary — with membership past 500 — the church embraces the name Berean Bible Church. &ldquo;The Bible is our middle name.&rdquo;</p></div>
-      <div class="tl"><div class="yr">Through the years</div><h4>Faithful through every season</h4><p>Through trials and transitions, the congregation holds fast — a living reminder that a church is not its walls.</p></div>
-      <div class="tl"><div class="yr">2023</div><h4>Berean Community Fellowship</h4><p>A new organizational chapter is established under Senior Pastor W. R. Thomas, carrying forward a heritage that reaches back to 2001.</p></div>
+    <div class="grid" style="grid-template-columns:repeat(4,1fr)">
+      <a class="feature" href="visit.html">
+        <div class="fphoto" style="background-image:url('assets/banner-visit.jpg')"></div><div class="fscrim"></div>
+        <div class="fbody"><h3>Plan a Visit</h3><p>What to expect your first Sunday.</p><div class="arrow">Visit →</div></div>
+      </a>
+      <a class="feature" href="story.html">
+        <div class="fphoto" style="background-image:url('assets/banner-story.jpg')"></div><div class="fscrim"></div>
+        <div class="fbody"><h3>Our Story</h3><p>How Berean came to be.</p><div class="arrow">Read →</div></div>
+      </a>
+      <a class="feature" href="ministries.html">
+        <div class="fphoto" style="background-image:url('assets/banner-ministries.jpg')"></div><div class="fscrim"></div>
+        <div class="fbody"><h3>Ministries</h3><p>Grow and get connected.</p><div class="arrow">Explore →</div></div>
+      </a>
+      <a class="feature" href="give.html">
+        <div class="fphoto" style="background-image:url('assets/banner-give.jpg')"></div><div class="fscrim"></div>
+        <div class="fbody"><h3>Give</h3><p>Support the mission.</p><div class="arrow">Give →</div></div>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- BAND: Plan a visit CTA -->
-<section class="band alt" style="background-image:linear-gradient(rgba(10,17,20,.78),rgba(10,17,20,.84)),url('assets/band-welcome.jpg');background-size:cover;background-position:center">
+<!-- TIMES BAND -->
+<section class="band" style="background-image:linear-gradient(rgba(6,34,38,.78),rgba(6,34,38,.84)),url('assets/band-worship.jpg');background-size:cover;background-position:center">
   <div class="wrap">
-    <p class="eyebrow">You&rsquo;re Welcome Here</p>
-    <h2 class="display" style="font-weight:700">There&rsquo;s a seat at the table for you.</h2>
-    <p>Come as you are and be part of what God is doing at Berean. We&rsquo;d love to meet you this Sunday.</p>
+    <p class="eyebrow">Gather With Us</p>
+    <h2 class="display" style="font-weight:700">Join us this Sunday at 9:00 AM</h2>
+    <p>3330 N. 35th Ave, Phoenix, AZ 85017 &nbsp;·&nbsp; Sunday Morning Prayer at 7:00 AM</p>
     <div class="band-actions">
-      <a class="btn btn-gold" href="#visit">Plan a Visit</a>
-      <a class="btn btn-ghost" href="#prayer">Request Prayer</a>
+      <a class="btn btn-gold" href="visit.html">Plan a Visit</a>
+      <a class="btn btn-ghost" href="events.html">See All Gatherings</a>
     </div>
   </div>
 </section>
 
-<!-- BELIEFS -->
-<section class="section soft" id="beliefs">
-  <div class="wrap">
-    <div class="center-head">
-      <p class="eyebrow">What We Believe</p>
-      <h2>Measured by Scripture</h2>
-      <p>These are the cornerstones of our faith. We hold to the historic Christian faith, stand on the authority of God&rsquo;s Word, and are conservative in our convictions — aligning with Scripture above all.</p>
-    </div>
-    <div class="acc">
-      <details open><summary>The Scriptures <span class="plus"></span></summary><div class="body">The Bible is the inspired, infallible, and authoritative Word of God — our final authority in all matters of faith and life. Like the Bereans, we test every teaching against the Scriptures.<span class="ref">2 Timothy 3:16–17 · Acts 17:11</span></div></details>
-      <details><summary>God <span class="plus"></span></summary><div class="body">We believe in one eternal God, existing in three persons — Father, Son, and Holy Spirit.<span class="ref">Matthew 28:19</span></div></details>
-      <details><summary>Jesus Christ <span class="plus"></span></summary><div class="body">Jesus Christ is fully God and fully man — born of a virgin, crucified for our sins, risen from the dead, and coming again.<span class="ref">John 1:1,14 · 1 Corinthians 15:3–4</span></div></details>
-      <details><summary>The Holy Spirit <span class="plus"></span></summary><div class="body">The Holy Spirit indwells, empowers, and transforms every believer, producing holy living and equipping the church with spiritual gifts.<span class="ref">John 14:16–17 · Galatians 5:22–23</span></div></details>
-      <details><summary>Salvation <span class="plus"></span></summary><div class="body">Salvation is by grace alone, through faith alone, in Jesus Christ alone — a gift of God, not earned by works.<span class="ref">Ephesians 2:8–9</span></div></details>
-      <details><summary>The Church <span class="plus"></span></summary><div class="body">The church is the body of Christ, called to worship God, make disciples, and serve the world in love.<span class="ref">Acts 2:42–47</span></div></details>
-      <details><summary>Baptism &amp; the Lord&rsquo;s Supper <span class="plus"></span></summary><div class="body">We observe believer&rsquo;s baptism by immersion and the Lord&rsquo;s Supper as ordinances given by Christ to His church.<span class="ref">Matthew 28:19 · 1 Corinthians 11:23–26</span></div></details>
-      <details><summary>Marriage, Family &amp; Sexuality <span class="plus"></span></summary><div class="body">We believe marriage is the covenant union of one man and one woman, and that God&rsquo;s design for sexuality and family is good and life-giving.<span class="ref">Genesis 2:24 · Matthew 19:4–6</span></div></details>
-      <details><summary>The Sanctity of Life <span class="plus"></span></summary><div class="body">We believe every human life bears God&rsquo;s image and is sacred from conception to natural death.<span class="ref">Psalm 139:13–16</span></div></details>
-      <details><summary>Last Things <span class="plus"></span></summary><div class="body">We believe in the personal return of Jesus Christ, the resurrection of the dead, and life everlasting with God.<span class="ref">1 Thessalonians 4:16–17 · Revelation 21:1–4</span></div></details>
-    </div>
-  </div>
-</section>
-
-<!-- MINISTRIES -->
-<section class="section" id="ministries">
-  <div class="wrap">
-    <div class="center-head">
-      <p class="eyebrow">Ministries</p>
-      <h2>Serve, grow, and belong</h2>
-      <p>There&rsquo;s a place for everyone at Berean. Our ministries help you grow in faith, build community, and use your gifts to serve.</p>
-    </div>
-    <div class="grid autogrid">
-      <div class="card min"><b>Youth Ministry</b><p>For our youth, ages 3–24.</p><div class="mmeta"><span>🗓️ Every other Saturday, 10 AM–1 PM</span><span class="lead">Led by Minister Burks</span></div></div>
-      <div class="card min"><b>Men&rsquo;s Ministry</b><p>Fellowship and growth for the men of the church.</p><div class="mmeta"><span>🗓️ 1st Saturday monthly, 10 AM</span><span class="lead">Led by Deacon Darrel Williams</span></div></div>
-      <div class="card min"><b>Women&rsquo;s Ministry</b><p>Fellowship and growth for the women of the church.</p><div class="mmeta"><span>🗓️ 1st Saturday monthly, 10 AM</span><span class="lead">Led by Sister Angela Hubbard</span></div></div>
-      <div class="card min"><b>Prayer Ministry</b><p>Standing in the gap for our church, families, and community.</p><div class="mmeta"><span class="lead">Led by Deaconess Yvonne Fairley</span><span>Assisted by Minister Shelly Byers</span></div></div>
-      <div class="card min"><b>Christian Education</b><p>Grounding believers in the Word through teaching and study.</p><div class="mmeta"><span class="lead">Led by Minister Shelly Byers</span><span>Assisted by Minister Burks</span></div></div>
-      <div class="card min"><b>Music Ministry</b><p>Leading the congregation in worship through song.</p><div class="mmeta"><span class="lead">Led by Minister Paul Clark</span><span>Assisted by Shellente Byers</span></div></div>
-      <div class="card min"><b>Outreach</b><p>Sharing the love of Christ beyond our walls and into the community.</p><div class="mmeta"><span class="lead">An extension of the Berean family</span></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- LEADERSHIP -->
-<section class="section soft" id="leadership">
-  <div class="wrap">
-    <div class="center-head">
-      <p class="eyebrow">Our Leadership</p>
-      <h2>Shepherding the Berean family</h2>
-      <p>Berean is led by a dedicated team committed to the faithful teaching of God&rsquo;s Word and the care of His people.</p>
-    </div>
-    <div class="grid autogrid" style="max-width:900px;margin:0 auto">
-      <div class="card leader"><div class="ava">WT</div><b>Pastor W. R. Thomas</b><div class="role">Senior Pastor</div><p>A servant with a humble heart to do the will of God — a workman in the vineyard who loves preaching and teaching the gospel, leading souls to Christ.</p></div>
-      <div class="card leader"><div class="ava">DW</div><b>Debora Williams</b><div class="role">Executive Pastor</div></div>
-      <div class="card leader"><div class="ava">RT</div><b>Dr. L. Regina Thomas</b><div class="role">Associate Pastor</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- VISIT -->
-<section class="section" id="visit">
-  <div class="wrap">
-    <div class="center-head">
-      <p class="eyebrow">Plan a Visit</p>
-      <h2>We&rsquo;d love to see you</h2>
-      <p>Come as you are. Whether you&rsquo;ve been in church your whole life or you&rsquo;re walking in for the first time, there&rsquo;s a place for you at Berean.</p>
-    </div>
-    <div class="visit-grid">
-      <div class="card brandcard">
-        <p class="eyebrow">Gather With Us</p>
-        <div class="sched">
-          <div class="row"><span class="d">Sunday — Morning Prayer</span><span class="t">7:00 AM</span></div>
-          <div class="row"><span class="d">Sunday — Worship Service</span><span class="t">9:00 AM</span></div>
-          <div class="row"><span class="d">Wednesday — Bible Study</span><span class="t">7:00 AM</span></div>
-          <div class="row"><span class="d">Thursday — Prayer</span><span class="t">6:30 PM</span></div>
-        </div>
-        <div class="infoline">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" style="flex:0 0 auto;margin-top:2px"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
-          <div>3330 N. 35th Ave, Phoenix, AZ 85017<br/>
-            <a href="https://maps.google.com/?q=3330+N+35th+Ave+Phoenix+AZ+85017" target="_blank" rel="noopener" style="color:#fff;font-weight:700;text-decoration:underline;font-size:.85rem;letter-spacing:.04em">Get directions →</a>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <h3>What to expect</h3>
-        <p style="margin-top:.6rem"><b style="color:var(--fg)">Come as you are.</b> There&rsquo;s no dress code — some dress up, many come casual.</p>
-        <p style="margin-top:.8rem"><b style="color:var(--fg)">A warm welcome.</b> Look for a greeter near the entrance; they&rsquo;ll help you find your way.</p>
-        <p style="margin-top:.8rem"><b style="color:var(--fg)">Worship &amp; the Word.</b> Expect worship, prayer, and a message from God&rsquo;s Word — about 90 minutes together.</p>
-        <p style="margin-top:.8rem"><b style="color:var(--fg)">Families welcome.</b> Children and families are always welcome at Berean.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- GIVE -->
-<section class="section soft" id="give">
-  <div class="wrap">
-    <div class="center-head">
-      <p class="eyebrow">Give</p>
-      <h2>Support the mission</h2>
-      <p>Your giving fuels the ministry of Berean. As a registered 501(c)(3) nonprofit, your gifts are tax-deductible.</p>
-    </div>
-    <div class="give-grid">
-      <a class="give" href="https://enroll.zellepay.com/qr-codes/?data=eyJuYW1lIjoiQkVSRUFOIENPTU1VTklUWSBGRUxMT1dTSElQIiwidG9rZW4iOiI2MDItODgyLTI0MzQiLCJhY3Rpb24iOiJwYXltZW50In0=" target="_blank" rel="noopener">
-        <span class="badge" style="background:#6D1ED4">Z</span>
-        <span><b>Zelle</b><small>Berean Community Fellowship · 602-882-2434</small></span>
-      </a>
-      <a class="give" href="https://cash.app/$bereancfchurch" target="_blank" rel="noopener">
-        <span class="badge" style="background:#00C244">$</span>
-        <span><b>Cash App</b><small>$bereancfchurch</small></span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- PRAYER -->
-<section class="section" id="prayer">
-  <div class="wrap" style="max-width:700px">
-    <div class="center-head">
-      <p class="eyebrow">Prayer</p>
-      <h2>How can we pray for you?</h2>
-      <p>Share your request below and our prayer team will lift it up. Your request is sent privately to the church.</p>
-    </div>
-    <div class="card" style="padding:32px">
-      <form id="prayerForm" class="pform" novalidate>
-        <div class="pf-row">
-          <label class="field">Name <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--muted)">(optional)</span>
-            <input type="text" name="Name" autocomplete="name" />
-          </label>
-          <label class="field">Email <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--muted)">(optional)</span>
-            <input type="email" name="email" autocomplete="email" placeholder="If you'd like a response" />
-          </label>
-        </div>
-        <label class="field">Your prayer request
-          <textarea name="Prayer Request" rows="5" required placeholder="Share what's on your heart…"></textarea>
-        </label>
-        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
-        <button type="submit" class="btn btn-primary">Send Prayer Request</button>
-        <p class="pnote" id="prayerErr" hidden style="color:var(--accent)">Something went wrong sending your request. Please try again, or email <a href="mailto:bcfellowship2@gmail.com" style="color:var(--accent);font-weight:600">bcfellowship2@gmail.com</a>.</p>
-        <p class="pnote">🔒 Your request is kept private and sent only to our prayer team.</p>
-      </form>
-      <div class="pthanks" id="prayerThanks" hidden>
-        <div class="ico">🙏</div>
-        <h3 style="font-size:1.4rem">Thank you — we&rsquo;re praying with you.</h3>
-        <p style="color:var(--muted);margin-top:.5rem">Your request has been received by our prayer team. God bless you.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="section soft" id="contact">
-  <div class="wrap">
-    <div class="center-head">
-      <p class="eyebrow">Contact</p>
-      <h2>Get in touch</h2>
-      <p>Have a question or want to know more? We&rsquo;re here and would love to hear from you.</p>
-    </div>
-    <div class="contact-grid">
-      <div class="card"><div class="ico" style="margin:0 auto 14px">☎</div><h3 style="font-size:1.05rem">Call</h3><p><a href="tel:+14802097939" style="color:var(--brand);text-decoration:none;font-weight:600">(480) 209-7939</a></p></div>
-      <div class="card"><div class="ico" style="margin:0 auto 14px">✉</div><h3 style="font-size:1.05rem">Email</h3><p><a href="mailto:bcfellowship2@gmail.com" style="color:var(--brand);text-decoration:none;font-weight:600">bcfellowship2@gmail.com</a></p></div>
-      <div class="card"><div class="ico" style="margin:0 auto 14px">📍</div><h3 style="font-size:1.05rem">Visit</h3><p>3330 N. 35th Ave<br/>Phoenix, AZ 85017</p></div>
-    </div>
-  </div>
-</section>
-
+<!-- FOOTER -->
 <footer>
   <div class="wrap">
     <div class="ftop">
@@ -525,17 +111,17 @@
       </div>
       <div class="fcol">
         <h4>Explore</h4>
-        <a href="#story">Our Story</a>
-        <a href="#beliefs">What We Believe</a>
-        <a href="#ministries">Ministries</a>
-        <a href="#leadership">Leadership</a>
+        <a href="about.html">About</a>
+        <a href="story.html">Our Story</a>
+        <a href="ministries.html">Ministries</a>
+        <a href="about.html#beliefs">What We Believe</a>
       </div>
       <div class="fcol">
         <h4>Connect</h4>
-        <a href="#visit">Plan a Visit</a>
-        <a href="#prayer">Prayer Request</a>
-        <a href="#give">Give</a>
-        <a href="#contact">Contact</a>
+        <a href="visit.html">Plan a Visit</a>
+        <a href="connect.html">Prayer &amp; Contact</a>
+        <a href="give.html">Give</a>
+        <a href="events.html">Events</a>
       </div>
       <div class="fcol">
         <h4>Gather With Us</h4>
@@ -557,51 +143,6 @@
   </div>
 </footer>
 
-<script>
-  document.getElementById('yr').textContent = new Date().getFullYear();
-
-  // Header color state on scroll
-  var hdr = document.getElementById('hdr');
-  function onScroll(){
-    if (window.scrollY > 40){ hdr.classList.add('scrolled'); hdr.classList.remove('top'); }
-    else { hdr.classList.add('top'); hdr.classList.remove('scrolled'); }
-  }
-  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
-
-  // Mobile menu
-  var burger = document.getElementById('burger'), menu = document.getElementById('menu');
-  burger.addEventListener('click', function(){ menu.classList.toggle('open'); });
-  menu.addEventListener('click', function(e){ if(e.target.tagName==='A') menu.classList.remove('open'); });
-
-  // Prayer request -> FormSubmit -> BCFC@bcfcphx.org
-  var pform = document.getElementById('prayerForm');
-  if (pform) {
-    pform.addEventListener('submit', function(e){
-      e.preventDefault();
-      var err = document.getElementById('prayerErr'); if (err) err.hidden = true;
-      var ta = pform.querySelector('textarea');
-      if (ta && !ta.value.trim()) { ta.focus(); return; }
-      var btn = pform.querySelector('button[type=submit]');
-      btn.disabled = true; btn.textContent = 'Sending…';
-      var fd = new FormData(pform);
-      fd.append('_subject', 'New Prayer Request — bcfcphx.org');
-      fd.append('_captcha', 'false');
-      fd.append('_template', 'table');
-      fetch('https://formsubmit.co/ajax/BCFC@bcfcphx.org', {
-        method: 'POST', headers: { 'Accept': 'application/json' }, body: fd
-      })
-      .then(function(r){ return r.json(); })
-      .then(function(j){
-        if (!j || String(j.success) !== 'true') throw new Error('not delivered');
-        pform.hidden = true;
-        document.getElementById('prayerThanks').hidden = false;
-      })
-      .catch(function(){
-        btn.disabled = false; btn.textContent = 'Send Prayer Request';
-        if (err) err.hidden = false;
-      });
-    });
-  }
-</script>
+<script src="main.js"></script>
 </body>
 </html>
